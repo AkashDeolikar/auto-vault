@@ -1,0 +1,467 @@
+/* /* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.home-container {
+  padding: 2rem;
+  /* max-width: 1200px; */
+  width: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+.featured-cars {
+  margin-bottom: 3rem;
+}
+
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.car-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+  justify-content: center;
+}
+
+.car-cardbox {
+  /* background: #fff; */
+  border-radius: 12px;
+  padding: 10px;
+  background: #82838424;
+  box-shadow: 0 4px 12px rgba(60, 58, 58, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.car-cardbox img {
+  border-radius: 8px;
+}
+
+.img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.nav-btn {
+  left: -25px;
+  right: -25px;
+  font-size: 2rem; /* ✅ Make sure font is visible */
+  border: none;
+  color: #2d2f31;
+  cursor: pointer;
+  padding: 2px 0px 6px;
+
+  margin: -4px 5px 0 -6px;
+
+  background: #efeeee;
+  border-radius: 50%;
+  box-shadow: 0 8px 12px 0 rgba(36, 39, 44, .15);
+  cursor: pointer;
+  height: 48px;
+  left: -27px;
+  margin-top: -24px;
+  top: 50%;
+  width: 48px;
+
+  border: 1px solid rgba(36, 39, 44, .7);
+  border-width: 0 0 2px 2px;
+}
+
+.deals {
+  max-width: 350px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  border-radius: 18px;
+  border: 1px solid #ffe082;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  transition: transform 0.3s;
+  justify-items: center;
+}
+
+.deals:hover {
+  transform: scale(1.01);
+  border: 1px solid #deb846;
+}
+
+.deals h2 {
+  margin-bottom: 16px;
+  font-size: 25px;
+  color: #ff6f00;
+  border-bottom: 2px solid #ffc107;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.deals ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.deals li {
+  font-size: 15px;
+  padding: 8px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.cta {
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 15px;
+  margin-bottom: 1rem;
+}
+
+/* Mobile-first Design (For screens smaller than 768px) */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.8rem;
+  }
+
+  .car-cardbox {
+    width: 100%;
+    /* Full width on mobile */
+    margin-bottom: 1rem;
+  }
+
+  .car-grid {
+    flex-direction: column;
+    /* Stack cars vertically */
+    align-items: center;
+  }
+
+  .cta h2 {
+    font-size: 0.8rem;
+  }
+}
+
+/* Tablet (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .car-cardbox {
+    width: 45%;
+    /* 2 cars per row on tablet */
+  }
+
+  .car-grid {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+/* Desktop (1024px and above) */
+@media screen and (min-width: 1024px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .car-cardbox {
+    width: 30%;
+    /* 3 cars per row on desktop */
+  }
+
+  .car-grid {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.deals .list li {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.view-btn {
+  padding: 8px 20px;
+  color: #f8c009;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  background-position: calc(50% + 10px) !important;
+  box-sizing: border-box;
+  border-style: double;
+  font-weight: bold;
+  border: 1px solid #7fe974;
+  cursor: pointer;
+  height: 44px;
+  letter-spacing: 0;
+  line-height: 43px;
+}
+.view-btn:hover{
+  font-size: 0.9rem;
+  transition: 0.3s;
+  border: 1px solid #3ec409;
+}
+
+.intro {
+  font-size: 28px;
+  margin-top: 3.5rem;
+  color: #fff;
+  display: flex;
+  font-weight: bolder;
+  /* align-items: center; */
+  /* justify-content: center; */
+  position: relative;
+  border-radius: 15px;
+  height: 2.5rem;
+  font-family: 'Arial';
+
+}
+.cl1{
+  color: rgb(237, 52, 52);
+}
+.cl2{
+  color: #5c5e60;
+}
+
+/*images*/
+.backgroundimage {
+  background-image: url("../Assets/image1.png"), url("../Assets/image2.png"), url("../Assets/image3.png");
+  background-size: cover, cover, cover;
+  background-position: center, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  /* height: 100vh; */
+  height: 40rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  text-shadow: 4px 4px 4px 6px rgba(15, 217, 200, 0.7)
+}
+
+.backgroundimage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  /* dark overlay for readability */
+  z-index: 0;
+  border-radius: 30px;
+
+}
+
+.naming {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 200px;
+}
+
+.naming h1 {
+  font-family: "Nissan Light", "Nissan Regular", Verdana, Arial, sans-serif;
+    font-size: 26px;
+    letter-spacing: 1.05px;
+    line-height: 38px;
+    position: relative;
+    text-transform: none !important;
+  /* font-size: clamp(3.2rem, 4vw, 3rem);
+  margin-bottom: 1.5rem;
+  color: white;
+  text-shadow: 0px 4px 4px rgba(60, 226, 213, 0.7) */
+}
+
+.typing {
+  font-family: "Nissan Light", "Nissan Regular", Verdana, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffcc00;
+  animation: blinkCursor 1s infinite;
+}
+
+@keyframes blinkCursor {
+
+  0%,
+  100% {
+    border-right: 2px solid #ffcc00;
+  }
+
+  50% {
+    border-right: 2px solid transparent;
+  }
+}
+
+/**/
+.rf-cards-scroller {
+  overflow-x: auto;
+  padding: 1rem 0;
+  background: #fff;
+}
+
+.rf-cards-scroller-content {
+  /* display: in; */
+  gap: 20px;
+  padding: 1rem;
+}
+
+.rf-card {
+  /* background: #ffffff2f; */
+  border-radius: 12px;
+  padding: 20px;
+  min-width: 260px;
+  /* box-shadow: 0 6px 20px rgba(174, 172, 172, 0.1); */
+  transition: transform 0.3s ease;
+}
+
+.rf-card:hover {
+  transform: scale(1.03);
+}
+
+.rf-card-icon svg {
+  fill: #e74c3c;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.rf-card-text h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #0a0a0a;
+}
+
+.rf-card-text p {
+  font-size: 0.9rem;
+}
+
+.btn-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  background-color: #0071e3;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  background-color: #005bb5;
+}
+
+/* Outer wrapper scrolls horizontally */
+/* Container with horizontal scroll */
+
+/* CardScroller.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.offers-page {
+  padding: 2rem;
+  text-align: center;
+  margin-top: 50px;
+  box-shadow: 0 4px 4px rgba(239, 154, 18, 0.83);
+}
+
+.offers-page h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.offers-grid {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.offer-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 4px rgba(239, 154, 18, 0.83);
+  width: 300px;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+}
+
+.offer-card img {
+  width: 50%;
+  height: 130px;
+  object-fit: fill;
+  border-radius: 8px;
+}
+
+.offer-card h3 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #e41010ea;
+}
+
+.offer-card p {
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
+
+.validity {
+  font-weight: bold;
+  color: #d9534f;
+}
+
+
+/* Responsive for tablet and mobile */
+/* @media (max-width: 768px) {
+  .rf-cards-scroller {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .rf-cards-scroller-content {
+    flex-wrap: nowrap; 
+    /* No wrap on mobile */
+    /* padding: 10px;
+  }
+
+  .rf-cards-scroller-item {
+    flex: 0 0 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rf-cards-scroller-item {
+    flex: 0 0 200px;
+  }
+} */ 

@@ -1,0 +1,79 @@
+.car-detail {
+    padding: 2rem;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh;
+    /* padding: 20px; */
+  }
+  
+  .car-detail h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .car-detail p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .car-detail h2,
+  .car-detail h3 {
+    color: #daa834;
+  }
+  
+  .car-detail ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  
+  .car-detail li {
+    background: #47484832;
+    margin: 0.5rem 0;
+    padding: 0.6rem;
+    border-radius: 5px;
+    font-size: 0.95rem;
+  }
+
+  /*FOR RENAULT*/
+  .embed-section {
+    margin-top: 2rem;
+  }
+  
+  .embed-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .embed-frame {
+    width: 100vh;
+    height: 50vh; /* 50% of viewport height */
+    border-radius: 10px;
+  }
+  
+  /*Toyota*/
+  .center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .visit-toyota {
+    background-color: #ebc548;
+    color: rgb(17, 17, 17);
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  

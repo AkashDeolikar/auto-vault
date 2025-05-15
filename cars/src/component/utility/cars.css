@@ -1,0 +1,100 @@
+/* CarFilterSidebar.css */
+.cr{
+  display: inline;
+}
+.car-filter-sidebar {
+    margin-top: 15px;
+    width: 220px;
+    background-color: var(--bg);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .car-filter-sidebar h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .car-filter-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .car-filter-sidebar li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .car-filter-sidebar li img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+  
+  .car-filter-sidebar li span {
+    font-weight: 500;
+  }
+  
+  /* Theme classes */
+  body.light {
+    --navbar-bg: #ffffff;
+    color: #111;
+  }
+  
+  body.dark {
+    --navbar-bg: #1e1e1e;
+    color: #f0f0f0;
+  }
+
+
+
+  .body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  .view {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+  }
+  .block {
+    height: 200px;
+    width: 300px;
+    margin: 50px;
+    border: 0.5mm solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  .block:nth-child(1) {
+    background: rgb(232, 88, 67);
+  }
+  .block:nth-child(2) {
+    background: rgb(26, 84, 207);
+  }
+  .block:nth-child(3) {
+    background: rgb(36, 217, 127);
+  }
+  
+
+  .dropdown {
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  

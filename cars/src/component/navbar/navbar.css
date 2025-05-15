@@ -1,0 +1,144 @@
+/* Full-width background for navbar */
+.car-navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: var(--navbar-bg);
+  transition: all 0.3s ease;
+}
+
+/* Full-width layout inside the navbar */
+.car-navbar-container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 8px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens initially */
+}
+
+.car-navbar-logo {
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  /* color: #007bff; Default color for light mode */
+  text-decoration: none;
+}
+
+body.dark .car-navbar-logo {
+  color: #c0bebe;
+}
+
+.car-navbar-links {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap; /* Keep wrap for slightly smaller screens */
+}
+
+.car-navbar-links a,
+.logout-btn {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+.car-navbar-links a.active {
+  border-bottom: 2px solid orange;
+}
+
+.logout-btn:hover,
+.car-navbar-links a:hover {
+  color: #f12711;
+}
+
+.theme-toggle {
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.user-info {
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+/* Mobile Menu Button (Initially Hidden) */
+.mobile-menu-button {
+  display: none; /* Hide on larger screens */
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 8px;
+}
+
+/* Styles for when the mobile menu is open */
+.car-navbar-links.mobile-open {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 100%; /* Position below the navbar */
+  left: 0;
+  width: 100%;
+  background: var(--navbar-bg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  gap: 15px;
+}
+
+.car-navbar-links.mobile-open a,
+.car-navbar-links.mobile-open .logout-btn,
+.car-navbar-links.mobile-open .user-info,
+.car-navbar-links.mobile-open .theme-toggle {
+  display: block; /* Make links take full width */
+  margin-left: 0; /* Reset left margin */
+}
+
+.car-navbar-links.mobile-open .theme-toggle {
+  margin-top: 10px;
+}
+
+/* Media Query for Lower Screens (e.g., tablets and phones) */
+@media (max-width: 768px) {
+  .car-navbar-container {
+    flex-wrap: nowrap; /* Prevent wrapping of logo and toggle on very small screens */
+  }
+
+  .car-navbar-links {
+    display: none; /* Hide links by default on smaller screens */
+  }
+
+  .mobile-menu-button {
+    display: block; /* Show the hamburger button */
+  }
+
+  .car-navbar-logo {
+    font-size: 24px; /* Adjust logo size for smaller screens */
+  }
+}
+
+/* Theme classes */
+body.light {
+  --navbar-bg: #ffffff;
+  color: #111;
+}
+
+body.dark {
+  --navbar-bg: #1e1e1e;
+  color: #f0f0f0;
+}

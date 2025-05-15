@@ -1,0 +1,151 @@
+.car-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Added for vertical alignment */
+  padding: 24px;
+  border-radius: 14px;
+  margin: 40px auto; /* Center horizontally */
+  max-width: 700px; /* Restrict width for consistency */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  color: #f7962e;
+  margin-bottom: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.8rem;
+}
+.heading{
+  margin-top: 15px;
+  color: #d32f2f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+.shift{
+  margin-left: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 420px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+select {
+  padding: 10px 14px;
+  border: 1px solid #605f5f;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+select:focus {
+  outline: none;
+  border-color: #ebb222;
+  box-shadow: 0 0 6px rgba(252, 231, 1, 0.938);
+}
+
+button {
+  padding: 12px;
+  background-color: #fec426;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #fbb904;
+}
+
+.result {
+  justify-items: center;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 14px;
+  border: 1px solid #ddddddcb;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 900px;
+  text-align: left;
+}
+
+.result h4 {
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 0.3rem;
+  color: #007bff;
+}
+
+.car-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.detail-box {
+  flex: 1 1 45%;
+  padding: 1rem 1.5rem;
+  border-left: 6px solid #007bff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease-in-out;
+  position: relative;
+}
+
+.detail-box:hover {
+  transform: translateY(-4px);
+}
+
+.detail-box p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.detail-box p::before {
+  content: "  •";
+  position: absolute;
+  left: 50;
+  color: #007bff;
+  font-size: 1.4rem;
+  line-height: 1;
+  top: 0;
+}
+
+.error {
+  color: #d32f2f;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .detail-box {
+    flex: 1 1 100%;
+  }
+
+  .car-search-container {
+    padding: 16px;
+  }
+
+  form {
+    width: 90%;
+  }
+}

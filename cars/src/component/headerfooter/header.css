@@ -1,0 +1,31 @@
+.rc-ribbon-content-item-base {
+    /* background: linear-gradient(135deg, #f4f4f4, #ffffff); */
+    background: linear-gradient(135deg, #f6b9b9, #eec7f8, #e4e496, #bde3fc);
+    padding: 5px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .ribbon {
+    font-weight: bold;
+    /* font-size: 1.1rem; */
+    color: #36383ab8;
+    margin-bottom: 4px;
+  }
+  
+  .as-buttonlink {
+    display: inline-flex;
+    margin-top: 2px;
+    color: white;
+    background-color: #32322ec6;
+    padding: 8px 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .as-buttonlink:hover {
+    background-color: rgb(241, 237, 237);
+    color: #32322ec6;
+  }
